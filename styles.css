@@ -1,11 +1,12 @@
 body{
    margin-top:70px;
+   margin-bottom: 100px;
  }
- @media(max-width: 768px){
-   body{
-     margin-top:180px;
-    }
- }
+
+ html {
+  position: relative;
+  min-height: 100%;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -88,37 +89,81 @@ li a:hover {
 .centerBox {
   background-color: black;
   margin: auto;
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   height: 500px;
   width: 100%;
 }
-
 .centerBox2 {
-  background-color: silver;
-  margin: auto;
-  height: 500px;
-  width: 85%;
-}
-
-.boxInBox {
-  background-color: black;
-  float: left;
-  height: 250px;
-  width: 25%;
   padding: 15px;
-}
-
-.boxInBox2 {
-  background-color: silver;
+  background-color: black;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 500px;
   width: 100%;
-  height: 100%;
+  clear: both;
 }
-
+#centerBox2stuff {
+  background: silver;
+  min-height: 100%;
+  width: 95%;
+  margin: auto;
+}
+.wordStuffBox {
+  float: right;
+  padding: 15px;
+  min-height: 100px;
+  overflow: hidden;
+  display: block;
+  width: 50%;
+}
+.boxStuffBox {
+  float: left;
+  padding: 15px;
+  min-height: 100px;
+  width: 50%;
+}
+.boxStuff {
+  background: black;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
 .boxText {
-  position: relative;
   text-align: center;
   font-size: 2em;
   color: white;
   top: 50%;
   transform: translateY(-50%);
+}
+.productBox {
+  position: relative;
+  float: left;
+  padding: 15px;
+  margin: 15px;
+  background: black;
+  min-height: 200px;
+  min-width: 335px;
+}
+.picBox {
+  position: absolute;
+  background: silver;
+  min-height: 85%;
+  width: 91%;
+  margin: auto;
+}
+.footer {
+  position: absolute;
+  margin-top: 70px;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  bottom: 0;
+}
+#footerText {
+  color: white;
+  float: left;
+}
+.views {
+  position: absolute;
+  display: block;
 }
